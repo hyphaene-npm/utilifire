@@ -11,7 +11,7 @@ const setYarnCommands = async opts => {
 
 const initYarn = async (dest, info) => {
 	const promise = setYarnCommands({ dest, info });
-	ora.promise(promise, getSpinner(`Running yarn install and yarn link`));
+	ora.promise(promise, getSpinner(`Running yarn install`));
 	await promise;
 };
 

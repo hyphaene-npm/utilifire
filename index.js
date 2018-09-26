@@ -12,8 +12,12 @@ module.exports = async () => {
 	const info = await promptLibraryInfo();
 	await generateLibrary(info);
 	const { name } = info;
+	console.log({ info });
+
+	const nameSplitted = name.split('/');
+	const folderName = nameSplitted.length > 1 ? nameSplitted[1] : nameSplitted[0];
 	const dest = path.join(process.cwd(), name);
-	return { name, dest };
+	return { folderName, dest };
 };
 
 if (!module.parent) {
@@ -24,13 +28,13 @@ if (!module.parent) {
 
 	module
 		.exports()
-		.then(({ name, dest }) => {
+		.then(({ folderName, dest }) => {
 			console.log(`
 
 Your module has been created at ${dest}.
 
 To get started, simply run:
-$ cd ${name} && yarn start
+$ cd ${folderName} && yarn start
 `);
 
 			process.exit(0);
