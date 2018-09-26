@@ -8,11 +8,10 @@ const path = require('path');
 const generateLibrary = require('./src/utils/generateLibrary');
 const promptLibraryInfo = require('./src/prompt');
 
-module.exports = async () => {
+const main = async () => {
 	const info = await promptLibraryInfo();
 	await generateLibrary(info);
 	const { name } = info;
-	console.log({ info });
 
 	const nameSplitted = name.split('/');
 	const folderName = nameSplitted.length > 1 ? nameSplitted[1] : nameSplitted[0];
@@ -26,8 +25,7 @@ if (!module.parent) {
 			$ npm-cli
 	`);
 
-	module
-		.exports()
+	main()
 		.then(({ folderName, dest }) => {
 			console.log(`
 
@@ -44,3 +42,4 @@ $ cd ${folderName} && yarn start
 			process.exit(1);
 		});
 }
+module.exports = main;
