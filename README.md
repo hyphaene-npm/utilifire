@@ -1,22 +1,17 @@
-# npm-cli
+# utilifire
 
 > CLI for easily publishing modern React libraries with Rollup and example usage via create-react-app.
 
 ## Intro
 
-**The purpose of this CLI is to make publishing our own React components as simple as possible.**
+**The purpose of this CLI is to make publishing our own libraries as easy as possible.**
 
 ## Features
 
 *   Easy-to-use CLI
 *   Handles all modern JS features
-*   Bundles `cjs` and `es` module formats
-*   [create-react-app](https://github.com/facebookincubator/create-react-app) for example usage and local dev
 *   [Rollup](https://rollupjs.org/) for build process
 *   [Babel](https://babeljs.io/) for transpilation
-*   [Jest](https://facebook.github.io/jest/) for testing
-*   uses storybook
-*   handles scss files
 
 ## Prerequisite :
 
@@ -25,19 +20,19 @@
 ## Install
 
 ```bash
-yarn global add @cheetahdigital/npm-cli
+yarn global add utilifire
 ```
 
 ou
 
 ```
-npm install -g @cheetahdigital/npm-cli
+npm install -g utilifire
 ```
 
 ## Creating a New Module
 
 ```bash
-npm-cli
+utilifire
 ```
 
 Answer some basic prompts about your module, and then the CLI will perform the following steps:
