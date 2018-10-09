@@ -1,10 +1,10 @@
-import { react, PropTypes } from './constants';
+import {} from './constants';
 
 const formatBuilder = format => fileName => ({
 	file: fileName,
 	format,
 	name: 'Whatson',
-	globals: {}
+	globals: {},
 });
 
 export default formatBuilder;

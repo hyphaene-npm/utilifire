@@ -11,7 +11,7 @@ export const pluginsArray = [
 	localResolve(),
 	resolve(),
 	commonjs(),
-	filesize()
+	filesize(),
 ];
 export const react = 'react';
 export const PropTypes = 'prop-types';
