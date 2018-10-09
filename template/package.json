@@ -20,6 +20,9 @@
 	"bugs": {
 		"url": "/to/be/replaced"
 	},
+	"files": [
+		"build"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
