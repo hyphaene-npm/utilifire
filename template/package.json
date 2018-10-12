@@ -7,7 +7,7 @@
 	"browser": "build/index.js",
 	"scripts": {
 		"build": "NODE_ENV=dev rollup -c",
-		"prepare": "yarn build",
+		"prepublishOnly": "yarn build",
 		"start": "NODE_ENV=dev rollup -c -w"
 	},
 	"keywords": [
@@ -20,6 +20,9 @@
 	"bugs": {
 		"url": "/to/be/replaced"
 	},
+	"files": [
+		"build"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
