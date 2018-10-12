@@ -8,8 +8,7 @@
 	"scripts": {
 		"build": "NODE_ENV=dev rollup -c",
 		"prepublishOnly": "yarn build",
-		"start": "NODE_ENV=dev rollup -c -w",
-		"postpack": "touch okkoko.js"
+		"start": "NODE_ENV=dev rollup -c -w"
 	},
 	"keywords": [
 		"rollup",
