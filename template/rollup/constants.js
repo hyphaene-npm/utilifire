@@ -21,4 +21,10 @@ export const PropTypes = 'prop-types';
 export const reactDom = 'react-dom';
 
 export const external = [react, reactDom, PropTypes];
+
+export const globals = external.reduce((acc, current) => {
+	acc[current] = current;
+	return acc;
+}, {});
+
 export const mainInput = 'src/index.js';

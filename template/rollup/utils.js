@@ -1,4 +1,6 @@
-export const setConfig = (input, output, external, plugins) => ({
+import { external, plugins, globals } from './constants';
+
+export const setConfig = (input, output) => ({
 	input,
 	output,
 	external,
@@ -9,5 +11,5 @@ export const formatBuilder = format => file => ({
 	file,
 	format,
 	name: 'Whatson',
-	globals: {},
+	globals,
 });
