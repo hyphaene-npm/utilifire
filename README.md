@@ -29,7 +29,7 @@ ou
 npm install -g utilifire
 ```
 
-## Creating a New Module
+## Creating a New Package
 
 ```bash
 utilifire
@@ -53,6 +53,11 @@ You'll run rollup to watch your `src/` module and automatically recompile it int
 yarn start # runs rollup with watch flag
 ```
 
+
+### Advices
+
+Please consider declaring your dependencies as external in order to reduce the build size after using the CLI to generate a folder.
+( See ```rollup/constants.js``` file)
 
 ## License
 
