@@ -54,10 +54,17 @@ yarn start # runs rollup with watch flag
 ```
 
 
-### Advices
+## Advices
 
 Please consider declaring your dependencies as external in order to reduce the build size after using the CLI to generate a folder.
 ( See ```rollup/constants.js``` file)
+
+
+## Roadmap
+
+- [ ] add git repo url ( and perform validations ( if not, prompt 'are you sure ? '))
+- [ ] be able to parse a ~/.conf to override the default values for utilifire ( whivch are ?)
+
 
 ## License
 
