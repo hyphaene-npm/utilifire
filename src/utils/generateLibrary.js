@@ -24,9 +24,11 @@ const generateLibrary = async ({ name, description, author, licence }) => {
 		dest,
 	};
 
+	console.log({ heeeeeeeeee: info });
+
 	await copyAllFiles(files, source, dest, info);
 	await initYarn(dest, info);
-	await initGitRepository(dest);
+	await initGitRepository(dest, name);
 
 	return dest;
 };

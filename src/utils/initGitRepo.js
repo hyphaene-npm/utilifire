@@ -2,10 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const execa = require('execa');
 const ora = require('ora');
-const pkg = require('../../package');
 
-const setupGitCommands = async opts => {
-	const { dest } = opts;
+const setupGitCommands = async (dest, name) => {
 	const gitIgnorePath = path.join(dest, '.gitignore');
 	fs.writeFileSync(
 		gitIgnorePath,
@@ -34,12 +32,12 @@ yarn-error.log*
 		'utf8'
 	);
 
-	const cmd = `git init && git add . && git commit -m "init ${pkg.name}@${pkg.version}"`;
+	const cmd = `git init && git add . && git commit -m "init ${name}@0.0.0"`;
 	return execa.shell(cmd, { cwd: dest });
 };
 
-const initGitRepository = async dest => {
-	const promise = setupGitCommands({ dest });
+const initGitRepository = async (dest, name) => {
+	const promise = setupGitCommands(dest, name);
 	ora.promise(promise, 'Initializing git repo');
 	await promise;
 };
