@@ -1,6 +1,6 @@
 {
     "name": "utilifire",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "CLI to generate a boilerplate for libraries as npm packages",
     "author": "Maximilien Garenne <maximilien.garenne@gmail.com>",
     "main": "index.js",
