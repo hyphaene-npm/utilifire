@@ -1,5 +1,7 @@
 # utilifire
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hyphaene-npm/utilifire.svg)](https://greenkeeper.io/)
+
 > CLI for easily publishing modern React libraries with Rollup and example usage via create-react-app.
 
 ## Intro
