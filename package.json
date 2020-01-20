@@ -20,7 +20,7 @@
 		"patch": "versionifier patch",
 		"minor": "versionifier minor",
 		"major": "versionifier major",
-		"postpublish": "npm install -g clifire@latest"
+		"postpublish": "npm install -g utilifire@latest"
 	},
 	"engines": {
 		"node": ">=8"

@@ -7,4 +7,6 @@ const mainOutput = [jsExt(pkg.browser)];
 const mainConfig = setConfig(mainInput, mainOutput);
 const config = [mainConfig];
 
+// https://github.com/rollup/rollup/issues/703
+
 export default config;
